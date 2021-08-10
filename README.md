@@ -20,14 +20,16 @@ First features we drop are the 'EIN' & 'NAME' because we expect both features to
 - Number of neurons, layers, and activation functions selected? 
 The initial model includes a single input features & two hidden layers. The first hidden layer has 50 neurons, the second has 25. Additionally, each of the hidden layers employed the "relu" activation method, while the output layer employed the "sigmoid" activation.
 - Were you able to achieve the target model performance? 
-The 75% target was not reached. The first model only achieved a 71.5% accuracy rate.
+The 75% target was not reached. The first model only achieved a 46.6% accuracy rate.
+![image](https://user-images.githubusercontent.com/80020446/128876920-4ba37100-edc8-4b71-ba88-fd85a1f0f923.png)
 
 - What steps did you take to try and increase model performance?
 1. Optimization 1: Reduced the application_counts to less than 500 and the classification_counts to les than 800; increased neurons to 80 and 30 respectively.
 
-2. Optimization 2: Dropped SPECIAL_CONSIDERATIONS feature because of prevalance of "N" for the value, returned application_counts to less than 700 and classification_counts to less than 1800; returned hidden layers to original values and added a third hidden layer with 25 neurons.
+2. Optimization 2: Dropped SPECIAL_CONSIDERATIONS feature because of prevalance of "N" for the value, returned application_counts to less than 700 and classification_counts to less than 1800.
 
 3. Optimization 3: Dropped the third hidden layer and changed the activation method for the output layer to "tanh"
+![image](https://user-images.githubusercontent.com/80020446/128876394-7528df1d-890f-4649-a1cc-670bf0df4483.png)
 
 ## Summary
 
